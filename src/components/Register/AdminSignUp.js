@@ -13,10 +13,10 @@ import axios from "axios";
 
 const AdminSignUp = () => {
   const [image, setImage] = useState("");
+  const [email, setEmail] = useState("");
   const [avatar, setAvatar] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [userName, setUserName] = useState("");
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -32,6 +32,7 @@ const AdminSignUp = () => {
 
   const createUser = async () => {
     const url = "https://set05api.herokuapp.com/api/user/register";
+
     const formData = new FormData();
 
     formData.append("companyName", companyName);
