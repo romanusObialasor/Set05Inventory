@@ -31,7 +31,7 @@ const AdminSignUp = () => {
   };
 
   const createUser = async () => {
-    const url = "https://https://set05api.herokuapp.com//api/user/register";
+    const url = "https://https://set05api.herokuapp.com/api/user/register";
     const formData = new FormData();
 
     formData.append("companyName", companyName);
